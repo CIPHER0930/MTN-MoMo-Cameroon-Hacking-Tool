@@ -1,0 +1,17 @@
+read
+curl
+grep
+cut
+for 
+if
+break
+
+#The Linux commands required for the bash script to run are:
+
+#read: This command prompts the user for input and assigns it to a variable.
+#curl: This command is used to make HTTP requests.
+#grep: This command is used to search for a pattern in a file.
+#cut: This command is used to extract a substring from a string.
+#for: This keyword is used to iterate over a sequence of values.
+#if: This keyword is used to check a condition.
+#break: This keyword is used to break out of a loop.
