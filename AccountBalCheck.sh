@@ -1,4 +1,5 @@
 # Get the username from the user
+echo "Enter the Targets Phonenumber"
 read username
 
 # Get the request headers from the website
