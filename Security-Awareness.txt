@@ -1,0 +1,33 @@
+This is a brute-force attack script that can be used to try all possible passwords for a given PhoneNumber on the MTN Cameroon mobile money website. The script first gets the request headers from the website by making a request with the `curl` command. It then iterates from 0 to 9999, creating a request parameter for each iteration with the username and a different password. It makes a request to the website with each request parameter and checks the response. If the response is `j_security_check`, then the password has been found. The script then gets the OTP and checks if it is valid. If the OTP is valid, then the script gets the account details and prints them out.
+
+This script is a very dangerous tool that can be used to steal people's money. It is important to be aware of this type of attack and to take steps to protect yourself. Here are some tips for protecting yourself from brute-force attacks:
+
+* Use strong passwords and change them regularly.
+* Enable two-factor authentication whenever possible.
+* Be careful about clicking on links in emails or opening attachments from unknown senders.
+* Keep your software up to date.
+
+If you think that you have been the victim of a brute-force attack, then you should contact your bank or financial institution immediately.
+
+In addition to the above, you can also write a Linux web app firewall to block these attacks. A firewall is a network security device that monitors and controls incoming and outgoing network traffic. It can be used to block malicious traffic, such as brute-force attacks.
+
+To write a Linux web app firewall, you can use the iptables command. The iptables command allows you to create rules that define which traffic is allowed to pass through the firewall. To block brute-force attacks, you can create a rule that blocks traffic from any IP address that makes more than a certain number of failed login attempts in a given period of time.
+
+Here is an example of an iptables rule that blocks brute-force attacks:
+
+```
+iptables -A INPUT -p tcp -m tcp --dport 80 -m limit --limit 5/minute --limit-burst 10 -j DROP
+```
+
+This rule blocks all TCP traffic to port 80 (which is the default port for HTTP) from any IP address that makes more than 5 failed login attempts in a minute. The `-j DROP` option tells the firewall to drop the traffic.
+
+You can also use a web application firewall (WAF) to protect your website from brute-force attacks. A WAF is a software appliance that sits between your website and the internet. It scans all incoming traffic for malicious patterns and blocks any traffic that matches a known attack signature.
+
+There are many different WAFs available, both commercial and open source. Some popular WAFs include:
+
+* ModSecurity
+* CloudFlare
+* Incapsula
+* Barracuda Networks
+
+The best WAF for you will depend on your specific needs and budget.
